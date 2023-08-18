@@ -11,7 +11,7 @@ async function fetchData() {
 export default async function About() {
   const data = await fetchData();
   return (
-    <main>
+    <main className=''>
       <Link href={'/'}>Navigate</Link>
       {data.map((todo: any) => (
         <h3>{todo.title}</h3>
